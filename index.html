@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>audio playlist</title>
+  
+<link rel="stylesheet" href="playlist.css">
+<style>
+    #playlist{
+        list-style: none;
+    }
+    #playlist li a{
+        color: black;
+        text-decoration: none;
+    }
+    #playlist .current-song a{
+        color: blue;
+    }
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+    <div id="player">
+        <audio controls="" id="audioPlayer" id="audio" tabindex="0" type="audio/mepg">
+        Sorry, your browser doesn't support html5!
+
+    </audio>
+    </div>
+   
+    <ul id="playlist">
+        <li class="current-song"><a href="Vaquero Perdido - The Mini Vandals.mp3">Vaquero</a></li>
+        <li><a href="To Loom Is to Love - The Mini Vandals.mp3">To Loom Is To love</a></li>
+    </ul>
+      <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+    <script src="playlist.js"></script>
+
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+   
+</body>
+</html>
